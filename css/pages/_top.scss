@@ -1,0 +1,469 @@
+#osechiContents {
+    font-family: 'Noto Sans JP', sans-serif;
+img {
+    max-width: 100%;
+    width: 100%;
+}
+
+ul.li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3s;
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.mv-bar {
+    text-align: center;
+    background-color: $red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:68px;
+    width: 100%;
+    p {
+        font-size: 30px;
+        color: $white;
+        position:relative;
+        display: inline-block;
+        font-weight: 600;
+        &::before {
+            content:url(../images/lp_osechi/logo-hero.svg);
+            position: absolute;
+            top:50%;
+            left: -44px;
+            transform: translateY(-75%);
+            width:27px;
+            height:27px;
+            display: inline-block;
+        }
+        &::after {
+            content:url(../images/lp_osechi/logo-hero.svg);
+            position: absolute;
+            top:50%;
+            right: -44px;
+            transform: translateY(-75%);
+            width:27px;
+            height:27px;
+            display: inline-block;
+        }
+    }
+}
+
+.osechi-inner {
+    max-width: 1027px;
+    margin-inline:auto;
+    padding:0 20px;
+}
+
+.sec01 {
+    margin-top: 20px;
+
+    .modal {
+        margin-top: 15px;
+        
+        .modal-top,
+        .modal-bottom {
+            display: flex;
+            gap:0 1px;
+        }
+
+        .modal-bottom {
+            margin-top: 1px;
+        }
+
+        .modal_trigger {
+            background-color: $brown;
+            color: $white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height:81.43px;
+            text-align: center;
+            font-size: 25px;
+            font-weight: 600;
+            position: relative;
+            img {
+                position: absolute;
+                top:50%;
+                right:26px;
+                transform: translateY(-50%);
+                max-width: 25px;
+                max-height: 25px;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    .content {
+        padding-top: 65px;
+        padding-bottom: 72.3px;
+        background-color: $yellow;
+    }
+    .item {
+        max-width: 666px;
+        margin-inline:auto;
+        h3 {
+            font-size: 20px;
+            font-weight: 600;
+            color: $black;
+        }
+        p {
+            font-size: 13px;
+            padding-top: 18px;
+            margin-top: 17px;
+            font-weight: 300;
+            line-height: calc(19/13);
+            border-top: 1px solid #707070;
+            span {
+                font-weight: 600;
+            }
+        }
+        .btn {
+            margin-top: 24px;
+        }
+    }
+}
+
+.sec02 {
+    margin-top: 60px;
+
+    .section-text {
+        margin-top: 16px;
+    }
+    .feature {
+        margin-top: 48px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(4,1fr);
+        column-gap: 23px;
+        row-gap: 20px;
+    }
+
+}
+
+.sec03 {
+    margin-top: 38px;
+
+    .ichioshi {
+        margin-top: 38px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap:0 23px;
+
+        .ichioshi-item {
+            cursor: pointer;
+            position: relative;
+            max-width: 200px;
+            &:hover .ichioshi-item-text {
+                opacity: 1;
+            }
+            .ichioshi-item-text {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                text-align: center;
+                color: $black;
+                background-color: rgba(255,255,255,0.5);
+                transition: .3s ease-in-out;
+                opacity: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                p {
+                    line-height: calc(27/16);
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    .btn {
+        margin-top: 48px;
+    }
+
+    .osechi-banner {
+        max-width: 646px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+.sec04 {
+    margin-top: 72px;
+}
+
+.sec05 {
+    margin-top: 72px;
+
+    .banner {
+        display: flex;
+        align-items: center;
+        gap:0 32px;
+        &:after {
+            display: none;
+        }
+    }
+
+    .banner-item {
+        max-width: 474px;
+    }
+
+    .banner01::after {
+        display: none;
+    }
+    .banner02::after {
+        display: none;
+    }
+
+    .btn {
+        margin-top: 48px;
+    }
+}
+
+.sec06 {
+    margin-top: 74px;
+
+    .section-text {
+        margin-top:17px;
+        font-size: 21px;
+    }
+
+    .tips {
+        margin-top: 40px;
+
+        .tips-items {
+            display: flex;
+
+            .tips-item {
+                &:nth-child(n+2) {
+                    margin-left: 29px;
+                }
+                .tips-item_img {
+                    position: relative;
+                    height:150px;
+                    img {
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                    span {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        max-width: 26px;
+                        max-height: 26px;
+                        width: 100%;
+                        height: 100%;
+                        background-color: $red;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color:$white;
+                    }
+                    .tips-item_label {
+                        font-size: 14px;
+                        font-weight: 600;
+                    }
+                }
+                p {
+                    margin-top: 16.5px;
+                    color: $black;
+                    font-size: 14px;
+                    line-height: calc(24 / 14);
+                    text-align: left;
+                }
+            }
+        }
+
+        .tips-title {
+            margin-top: 41.5px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: 600;
+            color: $black;
+        }
+        .tips-text {
+            font-size: 19px;
+            line-height: 1.6;
+            margin-top: 9px;
+            color: $black;
+            font-weight: 300;
+            text-align: left;
+            strong {
+                font-size: 21px;
+                font-weight: 600;
+            }
+            span {
+                display: block;
+                margin-top: 16px;
+                font-size: 14px;
+                line-height: calc(19/13);
+            }
+        }
+
+        .tips-desc {
+            background-color: $beige;
+            padding:43px 37px 23px 37px;
+            margin-top: 45px;
+
+            h3 {
+                font-size: 20px;
+                text-align: center;
+                font-weight: 600;
+            }
+            p {
+                margin-top: 16px;
+                font-size: 18px;
+                line-height: calc(31/18);
+                padding:0 11px;
+            }
+
+            .tips-desc-items {
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                grid-template-rows: repeat(3,1fr);
+                column-gap: 47px;
+                row-gap: 23px;
+                margin-top: 22px;
+
+                .tips-desc-item {
+                    display: flex;
+                    align-items: flex-start;
+
+                    .tips-desc-item_img {
+                        max-width: 58px;
+                        max-height: 58px;
+                        width: 100%;
+                        height: 100%;
+                    }
+                    .tips-desc-item_wrap {
+                        margin-left: 8px;
+                        h4 {
+                            font-size: 14px;
+                            font-weight: 600;
+                            line-height: calc(19/14);
+                        }
+                        p {
+                            font-size: 11px;
+                            font-weight: 300;
+                            margin-top: initial;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sec07 {
+    margin-top: 45px;
+
+    .policy {
+        max-width: 666px;
+        margin-inline:auto;
+
+        h2 {
+            text-align: center;
+            font-size: 31px;
+            font-weight: 600;
+            color: $black; 
+        }
+
+        .policy-check {
+            text-align: center;
+            font-size: 13px;
+            margin-top: 5px;
+            font-weight: 300;
+            color: $black;
+        }
+
+        h3 {
+            margin-top: 60.5px;
+            font-size: 20px;
+            line-height: calc(34/20);
+            font-weight: 600;
+        }
+
+        .policy-text {
+            margin-top: 17px;
+            padding-top: 21px;
+            border-top: 1px solid #707070;
+            font-size: 13px;
+            line-height:1.35;
+            span {
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+// section-title 共通
+
+.section-title {
+    text-align: center;
+    h2 {
+        font-size: 32px;
+        color: $red;
+        position:relative;
+        display: inline-block;
+        font-weight: 600;
+        &::before {
+            content:url(../images/lp_osechi/logo-category.svg);
+            position: absolute;
+            top:50%;
+            left: -80px;
+            transform: translateY(-50%);
+            width:50.5px;
+            height:50.5px;
+            display: inline-block;
+        }
+        &::after {
+            content:url(../images/lp_osechi/logo-category.svg);
+            position: absolute;
+            top:50%;
+            right: -80px;
+            transform: translateY(-50%);
+            width:50.5px;
+            height:50.5px;
+            display: inline-block;
+        }
+    }
+}
+
+.section-text {
+    font-size: 19px;
+    text-align: center;
+    font-weight: 600;
+    color:$black;
+}
+
+.btn { 
+    font-size: 23px;
+    font-weight: 600;
+    color:$black;
+    border-radius: 50px;
+    background-color: $white;
+    border: 1px solid #AA9E41;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-width:488.34px;
+    max-width: 488.34px;
+    height:66.66px;
+    margin-inline:auto;
+}
+
+}

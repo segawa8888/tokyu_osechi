@@ -1,0 +1,529 @@
+<!--テストアップ用（データ送付時削除） -->
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    </head>
+<!-- ここまで -->
+
+
+<body id="guide-tern">
+    <!-- 画面タイトル -->
+    <span id="title"></span>
+    <!-- // 画面タイトル -->
+    
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <!--テストアップ用（データ送付時削除） -->
+    <div class="demo-header" style="text-align: center;
+    font-size: 0;">
+        <img style="max-width: 100%;" src="images/lp_osechi/tokyu_header.jpg" alt="">
+    </div>
+    <div id="appBody" style="display: none;">
+        <div id="header">
+        
+            <div class="site_information">
+                <p class="signup inner"><a href="/ec/cmKojinAgree.html">便利でお得なネットショッピング会員（無料）へご登録ください。新規会員登録はこちら</a></p>
+            </div>
+        
+            <!-- / #login -->
+            
+            <div class="inner">
+                <span id="logo" style="margin: 0px;"><a href="#" title="TOP" onclick="return doTopLink();"><img src="https://ecimg.tokyu-dept.co.jp/ec/images/common/logo.png" alt="東急百貨店ネットショッピング"></a></span>
+                <p class="logo_area"><span id="logo_msg" class="logo_image_msg"><font size="-2" color="red"></font></span></p>
+                <div class="nav">
+                    <ul>
+                        <li><a href="#" onclick="return doGuide();" class="guide" title="総合ガイド"><img src="https://ecimg.tokyu-dept.co.jp/ec/images/common/btn_header_guide.png" alt="総合ガイド" class="over"></a></li>
+                        <li><a href="#" onclick="return doHowToShopping();"><img src="https://ecimg.tokyu-dept.co.jp/ec/images/common/btn_header_faq.png" alt="よくある質問" class="over"></a></li>
+                        <li>
+                            
+                            
+                                <a href="javascript:void(0);" onclick="return commHeadClick('doLogin')"><img src="https://ecimg.tokyu-dept.co.jp/ec/images/common/btn_login.png" alt="ログイン" class="over">
+                            </a>
+                            
+                        </li>
+                        <li>
+                            <span><a href="#" onclick="return commHeadClick('doFusenshi')"><img src="https://ecimg.tokyu-dept.co.jp/ec/images/common/btn_header_favorite.png" alt="お気に入り" class="over" style="width:95px"></a></span>
+                        </li>
+                    </ul>
+                    <div class="cart">
+                        <div class="button"><a href="javascript:void(0);" onclick="return commHeadClick('doEditShoppingBasket')" class="toCart"><img src="https://ecimg.tokyu-dept.co.jp/ec/images/common/btn_header_cart.png" alt="買物かごを見る" class="over"></a></div>
+                        <table>
+                            <tbody><tr>
+                                <th>商品数：</th>
+                                <td><span id="totalQuantity_c">0</span>点</td>
+                            </tr>
+                            <tr>
+                                <th>合計：</th>
+                                <td><span id="total_c">0</span>円<span>（税込）</span></td>
+                            </tr>
+                        </tbody></table>
+                    </div><!-- / #cart -->
+                </div><!-- / #nav -->
+            </div><!-- / #inner -->
+        </div>
+        <div id="search">
+            <div class="inner">
+                <!-- 追加div A -->
+                <div class="search_box">
+                    <!-- 追加div B -->
+                    <div class="wrap_select">
+                        <select name="categoryCd" id="categoryCd"><option value="1C000000000">このカテゴリから探す</option><option value="1C100000000">ご予算から選ぶ</option><option value="1C200000000">商品カテゴリーから選ぶ</option><option value="1C300000000">東急百貨店オリジナルギフト 「極味伝心」（きわみでんしん）</option><option value="1C700000000">東横のれん街</option><option value="1C900000000">ドゥ マゴ</option><option value="1CN00000000">ザ・キャピトルホテル東急</option><option value="1CB00000000">セルリアンタワー東急ホテル</option><option value="1CJ00000000">SALUS 東急沿線ギフト</option><option value="1CS00000000">スイーツセレクション</option><option value="1CR00000000">日本全国うまい鍋</option><option value="1CD00000000">心と技で守り継ぐ 老舗・料亭・名店の味</option><option value="1C800000000">精肉あづま</option><option value="1C600000000">ローゼンハイム</option><option value="1CL00000000">ダルマイヤー</option><option value="1CE00000000">マイスター山野井</option><option value="1CT00000000">ホテルオークラ</option><option value="1CA00000000">ホテルニューオータニ</option><option value="1CI00000000">新宿高野</option><option value="1CK00000000">京橋千疋屋</option><option value="1CP00000000">銘菓紀行</option><option value="1C500000000">おいしさ小分け 美味彩菜</option><option value="1CG00000000">選べるギフト ちょいす便</option><option value="1CH00000000">選べるカタログギフト</option><option value="1CW00000000">特別な一年、自分へのご褒美フード</option><option value="1CX00000000">おうちで旅気分♪ご当地グルメ</option><option value="1CZ00000000">簡単！美味しい！おうちご飯</option><option value="1Cc00000000">ご両親やご家族へ。真心伝わる感謝ギフト</option><option value="1Cd00000000">センスが光る☆ご挨拶ギフト</option><option value="1Ce00000000">オフィスで喜ばれる！気配り上手ギフト</option><option value="1Cf00000000">最新トレンド♪SHIBUYA miyage</option><option value="1CF00000000">ネットショッピング限定商品</option><option value="1CQ00000000">東急百貨店限定商品</option></select>
+                    </div>
+                    <!-- /追加div B -->
+                    <input type="text" name="syohinnNm" size="12" value="" onblur="outtext()" onfocus="intext()" id="syohinnNm" class="keyword">
+                    <input type="image" name="I3tjbUhlYWRlckFjdGlvbi5kb1NlYXJjaFByb2R1Y3R9" src="https://ecimg.tokyu-dept.co.jp/ec/images/common/btn_search.png" onclick="return fun_Productcheck();" id="btnSearch" class="over" alt="検索">
+                    <!--<a href="/ec/srDispProductListSearchSelect/doInitializeSearch">詳細検索</a>-->
+                    <div style="display:none"></div>
+                <div class="np-keyword-suggest" style="display: none;"></div><div class="np-item-suggest" style="display: none;"></div></div><!-- / .search_box -->
+                <!-- /追加div A -->
+
+                <!-- キーワード一覧　開始 -->
+                <ul class="list_keyword" name="headerMallNavigation" style="display: none;">
+                    <li><a href="/ec/cmShopTopPageC.html">お歳暮</a></li>
+                    <li><a href="/ec/cmShopTopPageW.html">ワイン</a></li>
+                    <li><a href="/ec/sapporo.html">さっぽろ店</a></li>
+                    <li><a href="/ec/cmShopTopPageA.html">ハロートーク</a></li>
+                </ul>
+                <!-- キーワード一覧　終了 -->
+
+            </div><!-- / #inner -->
+        </div>
+    </div> 
+    <!-- ここまで -->
+        
+    <div id="bodyContainer">
+        <!-- パンくず -->
+        <div id="pkz">
+            <ul>
+                <li><a href="/ec/cmTopPage/${subShopId}">通販トップ</a></li>
+                <li>とっておきの「食」のお話 TOKYU departmentstore Foods Story</li>
+            </ul>
+        </div>
+        <!-- // パンくず -->
+    
+    
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="https://www.tokyu-dept.co.jp/ec/css/style.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
+    
+        <!-- JS -->
+        <script type="text/javascript" src="https://www.tokyu-dept.co.jp/ec/js/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="https://www.tokyu-dept.co.jp/ec/js/common.js"></script>
+        <script type="text/javascript" src="js/heightLine.js"></script>
+       <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js' integrity='sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==' crossorigin='anonymous'></script> <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script type="text/javascript" src="js/lp_osechi.js"></script>
+    
+        <link rel="alternate" media="only screen and (max-width: 640px)" href="lp_valentine_sp/" />
+    
+    
+        <!-- === コンテンツ === -->
+        <div id="osechiContents" class="top">
+
+            <div class="mv">
+                <img src="./images/lp_osechi/mv.jpg" alt="2024年 東急百貨店 ネットショッピング限定 おせち">
+            </div>
+                <div class="mv-bar">
+                <p>全国配送料無料</p>
+                </div>
+
+            <!-- inner start-->
+
+            <div class="osechi-inner">
+            <section class="sec01">
+                <div class="section-title">
+                    <h2>カテゴリーから選ぶ</h2>
+                </div>
+                <div class="modal">
+                    <div class="modal-top">
+                        <a href="" class="modal_trigger">味わいから選ぶ
+                            <img src="./images/lp_osechi/modal_btn.png" alt="plus">
+                        </a>
+                        <a href="" class="modal_trigger">ブランドから選ぶ
+                            <img src="./images/lp_osechi/modal_btn.png" alt="plus">
+                        </a>
+                    </div>
+                    <div class="modal-bottom">
+                        <a href="" class="modal_trigger">人数から選ぶ
+                            <img src="./images/lp_osechi/modal_btn.png" alt="plus">
+                        </a>
+                        <a href="" class="modal_trigger">予算から選ぶ
+                            <img src="./images/lp_osechi/modal_btn.png" alt="plus">
+                        </a>
+                        <a href="" class="modal_trigger">地域から選ぶ
+                            <img src="./images/lp_osechi/modal_btn.png" alt="plus">
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="content">
+                <div class="item">
+                    <h3>お届けに関する注意</h3>
+                    <p><span>●天候や交通などの事情により、商品入荷・配送の遅延・不能が生じる場合がございます。あらかじめご了承くだ<br>さい。</span><br>
+                        ●お届け日および時間帯の指定はできません。<br>
+                        ●一部離島などお届けできない地域がございます。<br>
+                        ●配送日当日のお届け状況は、発送前にお送りする「商品発送のご連絡メール」にてお知らせします配送伝票番号<br>
+                        にてヤマト運輸HPにてご確認いただけます。</p>
+                            <a href="" class="btn">初めてご利用の方はこちらをご覧ください</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sec02">
+                <div class="section-title">
+                    <h2>特集</h2>
+                </div>
+                <p class="section-text">伝統のおせちから洋食や中華まで。ご家族の人数やお好みに合わせてお選びいただけます。</p>
+
+                <div class="feature">
+                    <div class="feature-item">
+                        <a href="">
+                            <img src="./images/lp_osechi/osechi01.jpg" alt="東急百貨店 オリジナルおせち">
+                        </a>
+                    </div>
+                    <div class="feature-item">
+                        <a href="">
+                            <img src="./images/lp_osechi/osechi02.jpg" alt="ファミリー向け 三〜四人用おせち">
+                        </a>
+                    </div>
+                    <div class="feature-item">
+                        <a href="">
+                            <img src="./images/lp_osechi/osechi03.jpg" alt="ご両親からお孫様まで 三〜四人用おせち">
+                        </a>
+                    </div>
+                    <div class="feature-item">
+                        <a href="">
+                            <img src="./images/lp_osechi/osechi04.jpg" alt="ご親戚・ご友人も 五〜八人用おせち">
+                        </a>
+                    </div>
+                    <div class="feature-item">
+                        <a href="">
+                            <img src="./images/lp_osechi/osechi05.jpg" alt="ご夫婦や三人家族 二〜三人用少人数おせち">
+                        </a>
+                    </div>
+                    <div class="feature-item">
+                        <a href="">
+                            <img src="./images/lp_osechi/osechi06.jpg" alt="洋風オードブル">
+                        </a>
+                    </div>
+                    <div class="feature-item">
+                        <a href="">
+                            <img src="./images/lp_osechi/osechi07.jpg" alt="和洋中オードブル">
+                        </a>
+                    </div>
+                    <div class="feature-item">
+                        <a href="">
+                            <img src="./images/lp_osechi/osechi08.jpg" alt="パックおせち おせちにもう一品">
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sec03">
+                <div class="osechi-banner">
+                    <a href="">
+                        <img src="./images/lp_osechi/osechi_banner.png" alt="banner">
+                    </a>
+                </div>
+            </section>
+
+            <!-- <section class="sec03">
+                <div class="section-title">
+                    <h2>2023年のいちおし ！</h2>
+                </div>
+                <div class="ichioshi">
+                    <div class="ichioshi-item">
+                        <a href="">
+                            <img src="./images/lp_osechi/ichioshi01.jpg" alt="ichioshi01">
+                        </a>
+                        <div class="ichioshi-item-text">
+                            <p>《ブランド名》商品名<br>〇〇〇〇〇〇〇〇〇〇</p>
+                             <p>コピー〇〇〇〇〇〇〇<br>
+                                〇〇〇〇〇〇〇〇〇〇<br>
+                                〇〇〇〇〇〇〇〇〇〇</p>
+                        </div>
+                    </div>
+                    <div class="ichioshi-item">
+                        <a href="">
+                            <img src="./images/lp_osechi/ichioshi02.jpg" alt="ichioshi02">
+                        </a>
+                        <div class="ichioshi-item-text">
+                            <p>《ブランド名》商品名<br>〇〇〇〇〇〇〇〇〇〇</p>
+                             <p>コピー〇〇〇〇〇〇〇<br>
+                                〇〇〇〇〇〇〇〇〇〇<br>
+                                〇〇〇〇〇〇〇〇〇〇</p>
+                        </div>
+                    </div>
+                    <div class="ichioshi-item">
+                        <a href="">
+                            <img src="./images/lp_osechi/ichioshi03.jpg" alt="ichioshi03">
+                        </a>
+                        <div class="ichioshi-item-text">
+                            <p>《ブランド名》商品名<br>〇〇〇〇〇〇〇〇〇〇</p>
+                            <p>コピー〇〇〇〇〇〇〇<br>
+                                〇〇〇〇〇〇〇〇〇〇<br>
+                                〇〇〇〇〇〇〇〇〇〇</p>
+                        </div>
+                    </div>
+                </div>
+
+                    <a href="" class="btn">2023年のいちおし！商品一覧</a>
+            </section> -->
+
+            <section class="sec04">
+            <!-- ランキング -->
+            </section>
+
+            <section class="sec05">
+                <div class="banner">
+                    <div class="banner-item banner01">
+                        <a href="">
+                            <img src="./images/lp_osechi/banner-dummy01.jpg" alt="dummy">
+                        </a>
+                    </div>
+                    <div class="banner-item banner02">
+                        <a href="">
+                            <img src="./images/lp_osechi/banner-dummy02.jpg" alt="dummy">
+                        </a>
+                    </div>
+                </div>
+
+                <a href="" class="btn">すべての商品を見る</a>
+            </section>
+
+            <section class="sec06">
+                <div class="section-title">
+                    <h2>冷凍おせちをおいしく解凍するコツ！</h2>
+                    </div>
+                    <p class="section-text">よりおいしくお召し上がりいただくための上手な解凍方法のポイントをチェック！</p>
+
+                    <div class="tips">
+                        <div class="tips-wrapper">
+                            <div class="tips-contents">
+                                <div class="tips-content">
+                                    <div class="tips-items">
+                                        <div class="tips-item">
+                                            <div class="tips-item_img">
+                                                <img src="./images/lp_osechi/tips01.jpg" alt="手元に届いた冷凍おせちは、お召し上がりになるまで冷凍庫で静かに保管してください。">
+                                                <span><label class="tips-item_label"></label>1</span>
+                                            </div>
+                                            <p>手元に届いた冷凍おせちは、お召し上がりになるまで冷凍庫で静かに保管してください。</p>
+                                        </div>
+                                        <div class="tips-item">
+                                            <div class="tips-item_img">
+                                                <img src="./images/lp_osechi/tips02.jpg" alt="お召し上がりの際は、お重を一段ごとに分け、ラップをかけて冷蔵庫で解凍してください。">
+                                                <span><label class="tips-item_label"></label>2</span>
+                                            </div>
+                                            <p>お召し上がりの際は、お重を一段ごとに分け、ラップをかけて冷蔵庫で解凍してください。</p>
+                                        </div>
+                                        <div class="tips-item">
+                                            <div class="tips-item_img">
+                                                <img src="./images/lp_osechi/tips03.jpg" alt="冷蔵庫で解凍時間が過ぎたら、食材をラップの上から触って確実に解凍されているか確かめてください。">
+                                                <span><label class="tips-item_label"></label>3</span>
+                                            </div>
+                                            <p>冷蔵庫で解凍時間が過ぎたら、食材をラップの上から触って確実に解凍されているか確かめてください。</p>
+                                        </div>
+                                        <div class="tips-item">
+                                            <div class="tips-item_img">
+                                                <img src="./images/lp_osechi/tips04.jpg" alt="１〜2時間前に冷蔵庫から出して室内に置き、常温にすることでよりおいしくお召し上がりいただけます。">
+                                                <span><label class="tips-item_label"></label>4</span>
+                                            </div>
+                                            <p>１〜2時間前に冷蔵庫から出して室内に置き、常温にすることでよりおいしくお召し上がりいただけます。</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h2 class="tips-title">「おせち料理」  意味と由来</h2>
+                                <div class="tips-text">どうしておせちを食べるようになったの？まずは由来を知ることからはじめましょう。<br><br>
+                                    <strong>おせちが一般的になったのは江戸時代から</strong><br>
+                                    おせちは中国から季節の節目を祝い神々を祀る五節供の行事として伝わりました。 奈良時代には宮中行事として確立し、<br>この行事の宴会で食べられた食事を「御節供」と言いました。この「御節供」がおせちの語源と言われています。<br>
+                                    それまで宮中行事でしかなかった御節供が庶民に広まったのは江戸時代。幕府が公式行事として節日を制定した頃、季節の節目を祝い、神々を祀る節日に食べられるようになります。のちに最も大切とされる年の初めの節日に食べられるものだけを「おせち」と呼ぶようになりました。
+                                    <span>※節日（節句）とは、1月1日元日、1月7日人日の節句、3月3日上巳の節句、 5月5日端午の節句、7月7日七夕の節句、9月9日重陽の節句など。</span>
+                                </div>
+                                <div class="tips-desc">
+                                    <h3>おめでたい意味やいわれ</h3>
+                                    <p>新年を迎える大切な正月の節句の日に神様に振る舞う御節料理には、 五穀豊穣、家内安全、子孫繁栄、不老長寿、などの意味を込めた山の幸、海の幸を贅沢に盛り込みます。それぞれの料理には年初めに食べるべき理由や意味が込められています。</p>
+                                    <div class="tips-desc-items">
+                                        <div class="tips-desc-item">
+                                            <div class="tips-desc-item_img">
+                                                <img src="./images/lp_osechi/origin_kuromame.png" alt="黒豆">
+                                            </div>
+                                            <div class="tips-desc-item_wrap">
+                                                <h4>黒豆</h4>
+                                                <p>黒く日焼けするほどマメに勤勉に働けるよう願う縁起物です。</p>
+                                            </div>
+                                        </div>
+                                        <div class="tips-desc-item">
+                                            <div class="tips-desc-item_img">
+                                                <img src="./images/lp_osechi/origin_kazunoko.png" alt="数の子">
+                                            </div>
+                                            <div class="tips-desc-item_wrap">
+                                                <h4>数の子</h4>
+                                                <p>数の子は、卵の数が多い事から子孫繁栄を願う縁起物です。</p>
+                                            </div>
+                                        </div>
+                                        <div class="tips-desc-item">
+                                            <div class="tips-desc-item_img">
+                                                <img src="./images/lp_osechi/origin_tadukuri.png" alt="田作り（ごまめ）">
+                                            </div>
+                                            <div class="tips-desc-item_wrap">
+                                                <h4>田作り（ごまめ）</h4>
+                                                <p>黒く日焼けするほどマメに勤勉に働けるよう願う縁起物です。</p>
+                                            </div>
+                                        </div>
+                                        <div class="tips-desc-item">
+                                            <div class="tips-desc-item_img">
+                                                <img src="./images/lp_osechi/origin_kamaboko.png" alt="紅白かまぼこ">
+                                            </div>
+                                            <div class="tips-desc-item_wrap">
+                                                <h4>紅白かまぼこ</h4>
+                                                <p>形状が初日の出の形に似る事から用いられ、赤色は魔除け、白色は清浄を意味しています。</p>
+                                            </div>
+                                        </div>
+                                        <div class="tips-desc-item">
+                                            <div class="tips-desc-item_img">
+                                                <img src="./images/lp_osechi/origin_datemaki.png" alt="伊達巻">
+                                            </div>
+                                            <div class="tips-desc-item_wrap">
+                                                <h4>伊達巻</h4>
+                                                <p>形が巻物に似ている事から知識が増えるようにという願いが込められています。</p>
+                                            </div>
+                                        </div>
+                                        <div class="tips-desc-item">
+                                            <div class="tips-desc-item_img">
+                                                <img src="./images/lp_osechi/origin_kinton.png" alt="きんとん">
+                                            </div>
+                                            <div class="tips-desc-item_wrap">
+                                                <h4>きんとん</h4>
+                                                <p>漢字で金団と書く事から、金色の団子という意味で金銀財宝を意味し金運を呼ぶ縁起物です。</p>
+                                            </div>
+                                        </div>
+                                        <div class="tips-desc-item">
+                                            <div class="tips-desc-item_img">
+                                                <img src="./images/lp_osechi/origin_namasu.png" alt="紅白なます">
+                                            </div>
+                                            <div class="tips-desc-item_wrap">
+                                                <h4>紅白なます</h4>
+                                                <p>大根と人参を酢付けしたなますは、水引をかたどっているとされ平安を願う縁起物です。</p>
+                                            </div>
+                                        </div>
+                                        <div class="tips-desc-item">
+                                            <div class="tips-desc-item_img">
+                                                <img src="./images/lp_osechi/origin_konbu.png" alt="昆布">
+                                            </div>
+                                            <div class="tips-desc-item_wrap">
+                                                <h4>昆布</h4>
+                                                <p>昆布は「よろこぶ」の語呂合わせで、縁起物とされています。</p>
+                                            </div>
+                                        </div>
+                                        <div class="tips-desc-item">
+                                            <div class="tips-desc-item_img">
+                                                <img src="./images/lp_osechi/origin_ebi.png" alt="海老">
+                                            </div>
+                                            <div class="tips-desc-item_wrap">
+                                                <h4>海老</h4>
+                                                <p>曲がった腰と長いひげから長生きしている老人を彷彿させるため、長寿の願いをこめておせちに加えられています。</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sec07">
+                <div class="policy">
+                    <h2>お申し込み・支払い方法について</h2>
+                    <p class="policy-check">ご注文の前に必ずお読みください</p>
+                    <h3>ご注文について</h3>
+                    <p class="policy-text">
+                    <span>【申込期限】</span><br>
+                    <span>12月20日(水)24時まで</span><br>
+                    ※電話・郵送・FAXでのご注文は受け付けておりません。<br><br>
+                    <span>【お支払い方法】</span><br>
+                    1.クレジットカード、2. 楽天ペイ、3. マルチペイメント<br><br>
+                    2.楽天ペイでのお支払いについて楽天ペイとは、楽天会員様が楽天グループ以外のサイトでも、楽天会員IDを利用してお支払いをすることができるサービスです。楽天ポイントを獲得・ご利用いただけます。<br>
+                    ※楽天ペイを利用するためには楽天会員情報にクレジットカードの登録が必要です。<br><br>
+                    3. マルチペイメント(コンビニ・ATM・ネットバンキング)でのお支払いについて<br>
+                    □12月10日(日)まで<br>
+                    ご注文後に案内するURLから、ご利用になりたいお支払い方法をお選びいただけます。<br>
+                    <span>※振込用紙はお送りいたしませんのでご注意願います。</span>※マルチペイメントでのお支払いは手数料がかかりません。
+                    </p>
+
+                    <h3>お届けについて</h3>
+                    <p class="policy-text">
+                    <span>【お届け日】</span><br>
+                    <span>12月29日（木）当日お届けのみ</span>（一部の商品を除く）<br><br>
+                    <span>【配送料】</span><br>
+                    <span>全国配送料無料</span><br>
+                    ※「配送料込」の表記がある商品を除く<br><br>
+                    <span>【配送遅延・配送停止地域について】</span><br>
+                    詳しくはこちらをご覧ください。<br><br>
+                    <span>【お届けに関する注意】<br>
+                        ●天候や交通などの事情により、商品入荷・配送の遅延・不能が生じる場合がございます。あらかじめご了承ください。</span><br>
+                        ●お届け日および時間帯の指定はできません。<br>
+                        ●一部離島などお届けできない地域がございます。<br>
+                        ●配送日当日のお届け状況は、発送前にお送りする「商品発送のご連絡メール」にてお知らせします。配送伝票番号にてヤマト運輸HPにてご確認いただけます。
+                    </p>
+
+                    <h3>ご注意事項（必ずお読みください）</h3>
+                    <p class="policy-text">
+                        ※商品は多数ご用意しておりますが、お申し込みが集中し、売り切れの際はご容赦願います。<br>
+                        ※表示価格は標準税率10%(軽減税率対象商品は8%)の消費税を含んだ税込価格です。<br>
+                        ※OFF(割引)表示はカタログ表記税抜本体価格に対しての表示です。<br>
+                        ※おせちのお品書きの内容が諸事情により変更になる場合がございますのでご了承ください。<br>
+                        ※お申し込み期限はお申し込み方法・ お支払い方法により異なります。<br>
+                        ※原産地につきましては、東急百貨店ネットショッピング「東急百貨店 全国配送冷凍おせち」ページにてご確認ください。<br>
+                        ※商品の特性上、お申し込み後の キャンセル・変更は承ることができません。<br>
+                        ※本誌掲載商品は東急百貨店店頭でのお取り扱いはございません。<br>
+                        ※ご進物としてののし、二重包装は承りかねます。あらかじめご了承ください。
+                    </p>
+                </div>
+            </section>
+
+        </div> <!-- inner end-->
+
+        </div><!-- / #valentineContents -->
+        <!-- === // コンテンツ === -->
+    
+    </div><!-- / #bodyContainer -->
+
+    <!-- <footer>テストアップ用（データ送付時削除）  -->
+        <div id="footer">
+            <div id="footer_information">
+
+                <div class="inner">
+                    <div class="security">
+                        <img src="images/lp_osechi/dummy_logo.png">
+                      </div>
+                    <div class="security">
+                        <a href="/ec/screenshareservice.html" target="_blank"><img src="https://ecimg.tokyu-dept.co.jp/ec/images/top/screenshareserviceicon.png" alt=""></a>
+                    </div>
+                
+                </div><!-- /inner -->
+                
+                
+            </div>
+            <div id="footer_copyright">
+                <div class="inner">
+                  <address><img src="https://ecimg.tokyu-dept.co.jp/ec/images/common/copyright.png" alt="Copyright © TOMONOKAI All Rights Reserved."></address>
+                  <ul>
+                    <li><a href="https://www.tokyu-dept.co.jp" target="_blank">店舗情報</a></li>
+                    <li><a href="https://www.tokyu-dept.co.jp/corporate/" target="_blank">企業情報</a></li>
+                    <li><a href="https://www.tokyu-dept.co.jp/corporate/privacy/" target="_blank">個人情報に関する取り組み</a></li>
+                  </ul>
+                </div><!-- /inner -->
+            </div>
+        </div>
+    <!-- ここまで -->
+
+
+
+</body>
+
+
+</html><!-- </html>テストアップ用（データ送付時削除） 

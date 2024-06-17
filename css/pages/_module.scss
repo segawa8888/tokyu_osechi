@@ -1,0 +1,25 @@
+.visible-sm{
+    display: none;
+    @include responsive(sm) {
+        display: inline;
+    }
+}
+.hidden-sm{
+    display: inline;
+    @include responsive(sm) {
+        display: none;
+    }
+}
+.visible-md{
+    display: none;
+    @include responsive(md) {
+        display: inline;
+    }
+}
+.hidden-md{
+    display: inline;
+    @include responsive(md) {
+        display: none;
+    }
+}
+

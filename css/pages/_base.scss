@@ -1,0 +1,98 @@
+%serif {
+    font-family: 游明朝,"Yu Mincho",YuMincho,"Hiragino Mincho ProN","Hiragino Mincho Pro",HGS明朝E,メイリオ,Meiryo,serif;
+}
+%sans-serif {
+    // font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'Droid Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+%ja-font-r,.ja-r{
+    font-family: "FOT-筑紫A丸ゴシック Std R";
+}
+%ja-font,.ja{
+    font-family: "FOT-筑紫A丸ゴシック Std B";
+}
+%en-font,.en{
+    font-family: 'Quicksand', sans-serif;
+}
+%font-set{
+    font-family: 'Quicksand',"FOT-筑紫A丸ゴシック Std R";
+}
+
+%paragraph{
+    font-size: 14px;
+    line-height: 1.8;
+    letter-spacing: 0.2em;
+    @include responsive(sm) {
+        font-size: 13px;
+    }
+}
+%width-1140{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1140px;
+    @include responsive(xxl) {
+    }
+}
+%width-940{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 940px;
+    @include responsive(xxl) {
+    }
+}
+%width-850{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 850px;
+    @include responsive(xxl) {
+    }
+}
+%width-840{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 840px;
+    @include responsive(xxl) {
+    }
+}
+%width-820{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 820px;
+    @include responsive(xxl) {
+    }
+}
+
+
+
+*:focus {
+outline: none;
+}
+a {
+-webkit-tap-highlight-color:rgba(0,0,0,0);
+cursor:pointer;
+}
+html{
+    font-size : 62.5%;
+}
+body {
+    position: relative;
+    @extend %sans-serif;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: antialiased;
+	-webkit-font-feature-settings: "palt" 1;
+	font-feature-settings: "palt" 1;
+    font-size: rem(14px);
+    line-height: 1.6;
+    *{
+        -webkit-backface-visibility:hidden;
+        backface-visibility: hidden;
+    }
+    p{
+        word-break: break-all;
+    }
+    a{
+        text-decoration: none;
+    }
+
+}
